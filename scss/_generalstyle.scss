@@ -1,0 +1,24 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+$width: 1200px;
+$gray-tx: #333333;
+$blue: #81B3D2;
+$gray: #EEEEEE;
+$pt: "PT Sans", sans-serif;
+
+body {
+  background: white;
+}
+.wrapper {
+  max-width: $width;
+  margin: 0 auto;
+}
+.container {
+  max-width: $width;
+  margin: 0 auto;
+  padding: 0 15px;
+}
