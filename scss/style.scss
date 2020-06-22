@@ -16,6 +16,8 @@
         line-height: 55px;
     }
     .logo {
+        position: relative;
+        z-index: 5;
         max-height: 70px;
         max-width: 138px;
     }
@@ -38,6 +40,7 @@
 }
 
 .welcome {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,5 +50,27 @@
     img {
     max-height: 350px;
     max-width: 456px;
+    }
+    &:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-bottom: 50px solid white;
+    border-right: 40vw solid transparent;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    }
+    &:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-bottom: 50px solid white;
+    border-left: 40vw solid transparent;
+    position: absolute;
+    right: 0;
+    bottom: 0;
     }
 }
